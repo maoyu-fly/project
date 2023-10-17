@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>groupPseronInfo</class>
+ <widget class="QWidget" name="groupPseronInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>70</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="imglabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>15</y>
+     <width>35</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="namelabel">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>15</y>
+     <width>201</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+     <pointsize>11</pointsize>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+background-color:transparent;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+background-color:transparent;
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../img.qrc">
+     <normaloff>:/chat/select2.svg</normaloff>:/chat/select2.svg</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chatmainwindow</class>
+ <widget class="QWidget" name="chatmainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1350</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>70</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(33, 150, 243);</string>
+   </property>
+   <widget class="QPushButton" name="folderBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>270</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/folder.svg</normaloff>:/chat/folder.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="moreBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>750</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/more.svg</normaloff>:/chat/more.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="contactBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>170</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/contact.svg</normaloff>:/chat/contact.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="collectBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>220</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/collect.svg</normaloff>:/chat/collect.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="watchBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>420</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/watch.svg</normaloff>:/chat/watch.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circleBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>370</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/video.svg</normaloff>:/chat/video.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="appletBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>650</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/applet.svg</normaloff>:/chat/applet.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="phoneBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>700</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/phone.svg</normaloff>:/chat/phone.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="videoBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>320</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/circle.svg</normaloff>:/chat/circle.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchBtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>470</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/search.svg</normaloff>:/chat/search.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="msgbtn">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>120</y>
+      <width>55</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>55</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/chat/chat2.svg</normaloff>:/chat/chat2.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MainUserheadImg">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="img.qrc">:/chat/man.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>MainUserheadImg</zorder>
+   <zorder>folderBtn</zorder>
+   <zorder>moreBtn</zorder>
+   <zorder>contactBtn</zorder>
+   <zorder>collectBtn</zorder>
+   <zorder>watchBtn</zorder>
+   <zorder>circleBtn</zorder>
+   <zorder>appletBtn</zorder>
+   <zorder>phoneBtn</zorder>
+   <zorder>videoBtn</zorder>
+   <zorder>searchBtn</zorder>
+   <zorder>msgbtn</zorder>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>0</y>
+     <width>961</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid  #c5c5c5;</string>
+   </property>
+   <widget class="QLabel" name="funclabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>799</x>
+      <y>1</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px;</string>
+    </property>
+    <widget class="QPushButton" name="closewindowbtn">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>0</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>关闭</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover { 
+ background-color: rgb(177, 0,0); }
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="img.qrc">
+       <normaloff>:/chat/close.svg</normaloff>:/chat/close.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>13</width>
+       <height>13</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="topwindowbtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>置顶</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover { 
+ background-color: rgb(177, 177, 177); }
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="img.qrc">
+       <normaloff>:/chat/sticky.svg</normaloff>:/chat/sticky.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>13</width>
+       <height>13</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minwindowbtn">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>最小化</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton:hover { 
+ background-color: rgb(177, 177, 177); }
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="img.qrc">
+       <normaloff>:/chat/min.svg</normaloff>:/chat/min.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>13</width>
+       <height>13</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="maxwindowbtn">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>0</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>最大化</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover { 
+ background-color: rgb(177, 177, 177); }
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="img.qrc">
+       <normaloff>:/chat/max.svg</normaloff>:/chat/max.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>13</width>
+       <height>13</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>0</y>
+     <width>311</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>5</number>
+   </property>
+   <widget class="QWidget" name="msgpage1">
+    <widget class="QWidget" name="widget_7" native="true">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>0</y>
+       <width>312</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid  #c5c5c5;</string>
+     </property>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>30</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>创建群聊</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid #2196f3;
+border-radius:5px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/chat/plus.svg</normaloff>:/chat/plus.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid #2196f3;
+border-radius:5px</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="message_listWidget">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>80</y>
+       <width>312</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget
+{
+background-color: rgb(223, 223, 223);
+QMenu::icon { display: none; };
+}
+
+QListWidget::item{
+height:80px;
+border:0px;
+background:rgb(223, 223, 223);
+}
+QScrollBar:vertical
+{
+    width:10px;
+    background:rgb(223,223,223);
+    margin:0px,0px,0px,0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+QScrollBar::handle:vertical
+{
+    width:10px;
+    background:#8d8d8d;
+    border-radius:3px;
+    height:5;
+}
+QListWidget::Item:hover
+{
+	background-color:rgba(244,244,244,1);
+}
+/*列表每个item在被选中时的属性值*/
+QListWidget::item:selected
+{
+   background-color:rgba(210,210,210,1);
+   border:0px;
+}
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+
+</string>
+     </property>
+    </widget>
+    <zorder>message_listWidget</zorder>
+    <zorder>widget_7</zorder>
+   </widget>
+   <widget class="QWidget" name="addingpage2">
+    <widget class="QWidget" name="widget_6" native="true">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>0</y>
+       <width>312</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid  #c5c5c5;</string>
+     </property>
+     <widget class="QPushButton" name="addbtn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>30</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid #2196f3;
+border-radius:5px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/chat/addFriend.png</normaloff>:/chat/addFriend.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid #2196f3;
+border-radius:5px</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="contactlistWidget">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>80</y>
+       <width>312</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget
+{
+background-color: rgb(223, 223, 223);
+}
+
+QListWidget::item{
+height:80px;
+border:0px;
+background:rgb(223, 223, 223);
+}
+QScrollBar:vertical
+{
+    width:10px;
+    background:rgb(223,223,223);
+    margin:0px,0px,0px,0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+QScrollBar::handle:vertical
+{
+    width:10px;
+    background:#8d8d8d;
+    border-radius:3px;
+    height:5;
+}
+QListWidget::Item:hover
+{
+	background-color:rgba(244,244,244,1);
+}
+/*列表每个item在被选中时的属性值*/
+QListWidget::item:selected
+{
+   background-color:rgba(210,210,210,1);
+   border:0px;
+}
+
+
+
+
+
+
+        
+
+</string>
+     </property>
+    </widget>
+    <zorder>contactlistWidget</zorder>
+    <zorder>widget_6</zorder>
+   </widget>
+   <widget class="QWidget" name="page_3"/>
+   <widget class="QWidget" name="page_4"/>
+   <widget class="QWidget" name="page_5"/>
+   <widget class="QWidget" name="addingpage2_6">
+    <widget class="QWidget" name="widget_8" native="true">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>0</y>
+       <width>312</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid  #c5c5c5;</string>
+     </property>
+     <widget class="QPushButton" name="searchcancelbtn">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>30</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="searchlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid #2196f3;
+border-radius:5px
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QStackedWidget" name="whether_sear_stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>80</y>
+       <width>312</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QWidget" name="searchsmallwidget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>312</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:1px solid  #c5c5c5;</string>
+       </property>
+       <widget class="QPushButton" name="searbtn">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="img.qrc">
+          <normaloff>:/chat/search.png</normaloff>:/chat/search.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>20</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>等线</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="text">
+         <string>搜索:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="sear_2btn">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>30</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="img.qrc">
+          <normaloff>:/chat/arrow-right.png</normaloff>:/chat/arrow-right.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="searrecordedit">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>25</y>
+          <width>151</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="searchsmallwidget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>312</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:1px solid  #c5c5c5;</string>
+       </property>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="text">
+         <string>无法找到该用户，请检查你填写</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="text">
+         <string>的账号是否正确</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <zorder>whether_sear_stackedWidget</zorder>
+    <zorder>widget_8</zorder>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="rstackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>80</y>
+     <width>961</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="send_page_1">
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>550</y>
+       <width>961</width>
+       <height>170</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid #c5c5c5;</string>
+     </property>
+     <widget class="QPushButton" name="sendbtn">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>115</y>
+        <width>130</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 150, 243);
+color: rgb(255, 255, 255);
+border:0px;</string>
+      </property>
+      <property name="text">
+       <string>发送</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>45</y>
+        <width>891</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>205</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/chat/chat-box.png</normaloff>:/chat/chat-box.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>27</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="transbtn">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/chat/folder.png</normaloff>:/chat/folder.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/chat/scissor.png</normaloff>:/chat/scissor.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/chat/smile.png</normaloff>:/chat/smile.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="rsvMessagelistWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>961</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QListWidget
+{
+border:1px solid  #c5c5c5;
+background-color: rgb(255, 255, 255);
+}
+
+QListWidget::item{
+height:60px;
+border:0px;
+
+background:rgb(255, 255, 255);
+
+}
+QScrollBar:vertical
+{
+    width:10px;
+    background:rgb(223,223,223);
+    margin:0px,0px,0px,0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+QListWidget::item:selected
+{
+   border:0px;
+}
+
+
+
+
+
+
+
+
+        
+
+</string>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::NoSelection</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="contactinfo_page_2">
+    <widget class="QWidget" name="widget_5" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>961</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid  #c5c5c5;
+</string>
+     </property>
+     <widget class="QLabel" name="friendsinfowidget_head_label">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>80</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid;
+border-color: rgb(195, 195, 195);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>460</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 150, 243);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>290</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>共同群聊：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="friendinfowidget_chatname_label">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>70</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>125</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>地区：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>220</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>朋友权限：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>350</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>来源：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>320</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>个性签名：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="friendsinfowidget_user_label">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>130</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>400</y>
+        <width>460</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(165, 165, 165);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>190</y>
+        <width>54</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>备注：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>270</y>
+        <width>460</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(165, 165, 165);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>373</x>
+        <y>430</y>
+        <width>35</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="img.qrc">:/chat/chat.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="friendinfowidget_sendmsg_btn">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>470</y>
+        <width>60</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*background-color: rgb(33, 150, 243);
+border:0px;
+border-radius:5px*/
+border:0px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>发消息</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>105</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>账号：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>60</y>
+        <width>31</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/chat/info.svg</normaloff>:/chat/info.svg</iconset>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="friendinfowidget_userid_label">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>105</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="deletefriendinfowidgetafter_page_3">
+    <widget class="QWidget" name="deletefriendinfowidgetafter" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>961</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid  #c5c5c5;
+</string>
+     </property>
+     <widget class="QLabel" name="deletefriendsinfowidget_head_label_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>80</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid;
+border-color: rgb(195, 195, 195);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>460</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 150, 243);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="deletefriendinfowidget_chatname_label_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>70</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>125</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>地区：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="friendsinfowidget_user_label_2">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>130</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>270</y>
+        <width>460</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(165, 165, 165);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="deletefriendinfowidget_add_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>310</y>
+        <width>140</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 150, 243);
+color: rgb(255, 255, 255);
+border-radius:5px
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>添加到通讯录</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>105</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="text">
+       <string>账号：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="deletefriendinfowidget_userid_label_2">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>105</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>等线</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:0px;</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_11">
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>54</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>第四页</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="appimg_page_5">
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>260</y>
+       <width>200</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="img.qrc">:/chat/chat.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>961</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid  #c5c5c5;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>label_8</zorder>
+    <zorder>label_7</zorder>
+   </widget>
+  </widget>
+  <zorder>stackedWidget</zorder>
+  <zorder>widget_2</zorder>
+  <zorder>rstackedWidget</zorder>
+  <zorder>widget</zorder>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
